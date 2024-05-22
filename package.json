@@ -1,0 +1,45 @@
+{
+  "name": "developer-portfolio",
+  "description": "Portfolio of Dhairya Joshi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.1",
+    "@next/third-parties": "^14.1.3",
+    "animejs": "^3.2.2",
+    "axios": "^1.6.8",
+    "blobity": "^0.2.3",
+    "clsx": "^2.1.1",
+    "framer": "^2.4.1",
+    "framer-motion": "^10.13.1",
+    "gsap": "^3.12.5",
+    "lottie-react": "^2.4.0",
+    "motion": "^10.17.0",
+    "next": "^14.1.3",
+    "react": "latest",
+    "react-animated-cursor": "^2.11.2",
+    "react-dom": "latest",
+    "react-fast-marquee": "^1.6.2",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^4.11.0",
+    "react-mouse-cursor": "^0.0.1",
+    "react-toastify": "^10.0.4",
+    "scroller-motion": "^1.2.3",
+    "tailwind-merge": "^2.3.0",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "sass": "^1.77.2",
+    "tailwindcss": "latest"
+  }
+}
