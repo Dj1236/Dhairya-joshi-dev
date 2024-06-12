@@ -12,6 +12,8 @@ import Skills from "./components/homepage/skills";
 import Blobity from "blobity";
 import { initialBlobityOptions } from "../utils/BlobityConfig";
 import useBlobity from "blobity/lib/react/useBlobity";
+import PreLoader from "./animations/PreLoader/PreLoader";
+
 // import IntroAnimation from "./components/IntroAnimation"; // Import IntroAnimation
 
 export default function Home() {
@@ -40,6 +42,8 @@ export default function Home() {
 
   return (
     <>
+    <PreLoader/>
+    
       
         <>
           <HeroSection />

@@ -1,0 +1,74 @@
+/* preloader.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.preloader {
+  gap: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.texts-container {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  overflow: hidden;
+  font-weight: 700; /* Extra bold */
+  color:#e4ded8; /* White text color */
+  opacity: 0;
+  font-family: 'Poppins', sans-serif; /* Apply font family */
+}
+
+@media (min-width: 640px) {
+  .preloader {
+    gap: 10px;
+    font-size: 28px;
+  }
+
+  .texts-container {
+    gap: 10px;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .preloader {
+    font-size: 32px;
+  }
+
+  .texts-container {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .preloader {
+    font-size: 36px;
+  }
+
+  .texts-container {
+    font-size: 36px;
+  }
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  background: #13152F;
+  color: #e4ded7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.preloader .texts-container {
+  height: 60px;
+}
