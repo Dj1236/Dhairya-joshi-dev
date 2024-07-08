@@ -2,7 +2,7 @@
 // @flow strict
 import { isValidEmail } from "../../../../utils/check-email";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
 
@@ -16,6 +16,11 @@ function ContactWithoutCaptcha() {
     email: false,
     required: false,
   });
+
+  useEffect(() => {
+    // Initialize EmailJS with the public key
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+  }, []);
 
   const checkRequired = () => {
     if (input.email && input.message && input.name) {
@@ -36,10 +41,9 @@ function ContactWithoutCaptcha() {
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     try {
-      const res = await emailjs.send(serviceID, templateID, input, publicKey);
+      const res = await emailjs.send(serviceID, templateID, input);
 
       if (res.status === 200) {
         toast.success("Message sent successfully!");
