@@ -17,21 +17,21 @@ import PreLoader from "./animations/PreLoader/PreLoader";
 // import IntroAnimation from "./components/IntroAnimation"; // Import IntroAnimation
 
 export default function Home() {
-  const [showIntro, setShowIntro] = useState(true);
-  const blobityInstance = useBlobity(initialBlobityOptions);
+  // const [showIntro, setShowIntro] = useState(true);
+  // const blobityInstance = useBlobity(initialBlobityOptions);
 
-  useEffect(() => {
-    if (blobityInstance.current) {
-      // @ts-ignore for debugging purposes or playing around
-      window.blobity = blobityInstance.current;
-    }
+  // useEffect(() => {
+  //   if (blobityInstance.current) {
+  //     // @ts-ignore for debugging purposes or playing around
+  //     window.blobity = blobityInstance.current;
+  //   }
 
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 8000); // duration in milliseconds
+  //   const timer = setTimeout(() => {
+  //     setShowIntro(false);
+  //   }, 8000); // duration in milliseconds
 
-    return () => clearTimeout(timer);
-  }, [blobityInstance]);
+  //   return () => clearTimeout(timer);
+  // }, [blobityInstance]);
 
   useEffect(() => {
     window.scrollTo({
