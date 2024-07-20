@@ -4,7 +4,7 @@
 
 This repository contains the source code for the personal website and blog of Dhairya Joshi. The website is built using modern web technologies to provide an engaging and responsive user experience.
 
-[Live Preview](https://www.dhairyajoshi.com)
+[Live Preview](https://dhairyajoshi.com/)
 
 ## Features
 
